@@ -54,6 +54,7 @@
     line-height: 24.3px;
     letter-spacing: 0%;
     width: 100%;
+    font-style: normal;
 }
 
 .header__address {
@@ -124,7 +125,7 @@
     font-size: 22px;
     line-height: 28px;
     max-width: fit-content;
-    word-spacing: 560%;
+    word-spacing: 330%;
     text-transform: uppercase;
 }
 
@@ -181,7 +182,7 @@
 }
 
 .card-link {
-
+    cursor: pointer;
 }
 
 .card_type_film {
@@ -214,6 +215,108 @@
 }
 
 .lots__look-more-link {
-
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23.48px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    margin: 30px 0 0 40px;
+    display: block;
+    max-width: fit-content;
+    cursor: pointer;
 }
 
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0 10px;
+    justify-items: center;
+    min-width: calc(100% - 100px);
+    margin: 120px 24px 0;
+}
+
+.about__column {
+    padding-top: 35px;
+}
+
+.about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    max-width: 148px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46.96px;
+    letter-spacing: 0%;    
+    text-transform: uppercase;
+    margin: 100px 0 100px;
+}
+
+.about__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%; 
+}
+
+.about__text:not(:first-of-type) {
+    margin-top: 24px;
+}
+
+.footer {
+    margin: 180px 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 180px;
+    padding: 0 50px 0;
+}
+
+.footer__menu-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.footer__menu-list-item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.footer__menu-link {
+    cursor: pointer;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    justify-self: end;
+    list-style: none;
+}
+
+.footer__social-list-item {
+    width: 48px;
+}
+
+.footer__social-link {
+    cursor: pointer;
+}
